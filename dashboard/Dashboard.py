@@ -2,9 +2,9 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.express as px
-import source as src # data source 
 
-data = src.all_data
+url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTXFKefF7-wy_GWu-tWyI9BFW_HYNB16mGO5yCkQ57I_JraswJO6LHmXEpMjE4myWB_nH2bPP--sQwm/pub?gid=0&single=true&output=csv'
+data = pd.read_csv(url)
 
 # style
 st.markdown("""
